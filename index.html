@@ -20,10 +20,13 @@
 var lat = 48.852969;
 var lon = 2.349903;
 var villes = { // seules les villes ajoutées dans ce tableau sont affichées sur la carte
-  "Paris": { "lat": 48.852969, "lon": 2.349903 },
-  "Brest": { "lat": 48.383, "lon": -4.500 },
-  "Quimper": { "lat": 48.000, "lon": -4.100 },
-  "Bayonne": { "lat": 43.500, "lon": -1.467 }
+  "Lyon": { "lat":45.75, "lon":4.85 },
+  "Lievin": { "lat": 50.417921, "lon": 2.775222 },
+  "Linselles": { "lat": 50.7333, "lon": 3.0833 },
+  "Solenzara": { "lat": 41.8351900, "lon": 9.3747000 }
+  "Brest": { "lat": 48.390394, "lon": -4.486076 }
+  "Lille": { "lat": 50.633333, "lon": 3.066667 }
+  "Henin-Beaumont": { "lat": 50.420087, "lon": 2.94728 }
 };
 
 window.onload = function(){
@@ -47,19 +50,20 @@ window.onload = function(){
     <div class="columns">
  <!-- Benoit Bigand Lyon -->
       <div class="column col-auto">
-        <div id="ville_Lyon" class="card bg-dark m-2">
+        <div id="ville_Paris" class="card bg-dark m-2">
           <!--  l'id de la forme ville_A est nécessaire pour que le lien vers
                  la ville Afonctionne -->
           <div class="card-header">
-            <div class="card-title h5">Lyon</div>
-            <div class="card-subtitle text-gray">Métropole</div>
+            <div class="card-title h5">Paris</div>
+            <div class="card-subtitle text-gray">Capitale</div>
           </div>
           <div class="card-image">
             <!-- Utilisez de préférence des images de taille identique partout (ici : 320x200)-->
-            <img style="width: 320px; height: 200px;" src="lyon.jpg" class="img-responsive">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg/320px-La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg" class="img-responsive">
           </div>
           <div class="card-body bg-secondary text-dark">
-              Lyon est une commune française située dans le quart-sud-est de la France au confluent du Rhône et de la Saône. Siège du conseil de la métropole de Lyon, elle est le chef-lieu de l'arrondissement de Lyon, de la circonscription départementale du Rhône et de la région Auvergne-Rhône-Alpes.           </div>
+            Insérez description...
+          </div>
         </div>
       </div>
 
@@ -70,7 +74,7 @@ window.onload = function(){
                  la ville Afonctionne -->
           <div class="card-header">
             <div class="card-title h5">Liévin</div>
-            <div class="card-subtitle text-gray">ville française</div>
+            <div class="card-subtitle text-gray">commune de France</div>
           </div>
           <div class="card-image">
              <img src="https://ville-data.com/tourisme/image/tourisme-300.jpg" class="img-responsive">
@@ -84,10 +88,11 @@ window.onload = function(){
 
 <!--Corentin Delree Linselles -->
       <div class="column col-auto">
-        <div id="ville_Paris" class="card bg-dark m-2">
+        <div id="ville_Linselles" class="card bg-dark m-2">
           <!--  l'id de la forme ville_A est nécessaire pour que le lien vers
                  la ville Afonctionne -->
           <div class="card-header">
+
             <div class="card-title h5">Linselles</div>
             <div class="card-subtitle text-gray">Commune francaise</div>
           </div>
@@ -96,12 +101,12 @@ window.onload = function(){
             <img src="https://www.descampiaux-dudicourt.fr/upload/wikimedias/Linselles_-_Town_hall_1.jpg" class="img-responsive">
           </div>
           <div class="card-body bg-secondary text-dark">
-            Linselles est une commune du nord de la France possédant une population de 8 342 habitants pour une superficie de 11,71 km².
+            La ville de Linselles est une commune du nord de la France possédant une population de 8 342 habitants pour une superficie de 11,71 km².
           </div>
         </div>
       </div>
 
-<!--Brieuc Fresnel  -->
+<!--Brieuc Fresnel Brest -->
       <div class="column col-auto">
         <div id="ville_Brest" class="card bg-dark m-2">
           <!--  l'id de la forme ville_A est nécessaire pour que le lien vers
@@ -109,17 +114,19 @@ window.onload = function(){
           <div class="card-header">
             <div class="card-title h5">Brest</div>
             <div class="card-subtitle text-gray">Ville française</div>
+
           </div>
           <div class="card-image">
             <!-- Utilisez de préférence des images de taille identique partout (ici : 320x200)-->
-            <img src="https://psynapse.fr/wp-content/uploads/2014/01/formations-hypnose-pnl-a-brest-300x200.jpg" class="img-responsive">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg/320px-La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg" class="img-responsive">
           </div>
           <div class="card-body bg-secondary text-dark">
+
             Brest est une commune française,<br/>chef-lieu d’arrondissement du<br/>département du Finistère dans la <br/>région Bretagne. C'est un port<br/>important, deuxième port militaire<br/>en France après Toulon, situé à<br/>l'extrémité ouest de la Bretagne.
+
           </div>
         </div>
       </div>
-
 
 <!-- Luc Bulteau Solenzara -->
       <div class="column col-auto">
@@ -127,8 +134,8 @@ window.onload = function(){
           <!--  l'id de la forme ville_A est nécessaire pour que le lien vers
                  la ville Afonctionne -->
           <div class="card-header">
-            <div class="card-title h5">Brest</div>
-            <div class="card-subtitle text-gray">Capitale</div>
+            <div class="card-title h5">Solenzara</div>
+            <div class="card-subtitle text-gray">Ville de Corse</div>
           </div>
           <div class="card-image">
             <!-- Utilisez de préférence des images de taille identique partout (ici : 320x200)-->
@@ -142,37 +149,37 @@ window.onload = function(){
       </div>
  <!-- Gweltaz Grioche Lille -->
       <div class="column col-auto">
-        <div id="ville_Quimper" class="card bg-dark m-2">
+        <div id="ville_Lille" class="card bg-dark m-2">
           <!--  l'id de la forme ville_A est nécessaire pour que le lien vers
                  la ville Afonctionne -->
           <div class="card-header">
-            <div class="card-title h5">Quimper</div>
-            <div class="card-subtitle text-gray">Capitale</div>
+            <div class="card-title h5">Lille</div>
+            <div class="card-subtitle text-gray">Métropole Européenne</div>
           </div>
           <div class="card-image">
             <!-- Utilisez de préférence des images de taille identique partout (ici : 320x200)-->
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg/320px-La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg" class="img-responsive">
+            <img src="https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwj10Z3fz5riAhUM1RoKHWs-DiQQjRx6BAgBEAU&url=https%3A%2F%2Fwww.vinci-immobilier.com%2Ftrouver-son-logement-neuf%2Flille&psig=AOvVaw2mpquQCC9D7AMqKqG511kr&ust=1557909614235821">
           </div>
           <div class="card-body bg-secondary text-dark">
-            Insérez description...
+            Commune de 232 440 (Lille intra muros en 2016) qui forme aux cotés de Roubaix, tourcoing, villeneuve d'Asq et 86 autres communes , la Métrolpole Européenne de Lille qui compte 1 139 9292 habitants au 1er janvier 2014.
           </div>
         </div>
       </div>
   <!-- Lally Bouquerel Henin-Beaumont -->
       <div class="column col-auto">
-        <div id="ville_Bayonne" class="card bg-dark m-2">
+        <div id="ville_Heninbeaumont" class="card bg-dark m-2">
           <!--  l'id de la forme ville_A est nécessaire pour que le lien vers
                  la ville Afonctionne -->
           <div class="card-header">
-            <div class="card-title h5">Bayonne</div>
-            <div class="card-subtitle text-gray">Capitale</div>
+            <div class="card-title h5">Hénin-Beaumont</div>
+            <div class="card-subtitle text-gray">Commune française</div>
           </div>
           <div class="card-image">
             <!-- Utilisez de préférence des images de taille identique partout (ici : 320x200)-->
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg/320px-La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg" class="img-responsive">
+            <img src="https://france3-regions.francetvinfo.fr/hauts-de-france/sites/regions_france3/files/styles/top_big/public/assets/images/2014/06/14/maxstockworld310142.jpg?itok=ftocO8Hi" class="img-responsive">
           </div>
           <div class="card-body bg-secondary text-dark">
-            Insérez description...
+Hénin-Beaumont est une commune française du département du Pas-de-Calais en région Hauts-de-France. La commune résulte de la fusion d'Hénin-Liétard et de Beaumont-en-Artois en 1971. Peuplée en 2016 de 25 901 habitants, c'est la 6ᵉ ville du département et la 24ᵉ de la région.
           </div>
         </div>
       </div>
